@@ -1,0 +1,51 @@
+[workspace]
+members = [
+    "neeml_cli",
+    "neeml_core",
+    "neeml_gui",
+    "neeml_server",
+    "neeml_tui",
+]
+resolver = "2"
+default-members = ["neeml_core", "neeml_cli", "neeml_server"]
+
+[workspace.package]
+authors = ["Dom Rodriguez <shymega@shymega.org.uk>"]
+categories = ["networking", "email", "cli", "gui", "tui"]
+description = "A fully-fledged Swiss Army Knife for email, with a client/server architecture."
+edition = "2021"
+homepage = "https://github.com/neeml/neeml/wiki"
+keywords = ["email", "client", "server", "cli", "gui", "tui", "smtp", "imap", "jmap", "nntp", "mua"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/neeml/neeml.git"
+rust-version = "1.65.0"
+version = "0.1.0"
+
+[workspace.dependencies]
+anyhow = { version = "1.0.82" }
+serde = { version = "1.0.198", features = ["derive"] }
+thiserror = { version = "1.0.59" }
+tokio = { version = "1.37.0", features = ["full"] }
+
+[profile.dev]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = true
+
+[profile.dev.package."*"]
+codegen-units = 1
+opt-level = 3
+debug = true
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+debug = false
+
+[profile.release.package."*"]
+codegen-units = 1
+opt-level = 3
+debug = false
