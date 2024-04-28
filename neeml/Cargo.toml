@@ -13,7 +13,7 @@ keywords.workspace = true
 
 [[bin]]
 name = "neeml"
-path = 'src/bin/neeml.rs'
+path = "src/bin/neeml.rs"
 required-features = ["server"]
 
 [[bin]]
@@ -22,24 +22,24 @@ path = "src/bin/neemlc.rs"
 required-features = ["client"]
 
 [features]
-default = ["client", "server"]
+default = ["full"]
 client = []
 server = []
 
 full = ["client", "server", "providers-all"]
 
 providers-all = ["neeml-common/providers-all"]
-providers-carddav = ["neeml-common/providers-carddav"]
+providers-carddav = ["neeml-common/providers-contexts-carddav"]
 providers-contexts-exchange = ["neeml-common/providers-contexts-exchange"]
 providers-contexts-gmail = ["neeml-common/providers-contexts-gmail"]
 providers-dav = ["neeml-common/providers-dav"]
 providers-imap = ["neeml-common/providers-imap"]
 providers-jmap = ["neeml-common/providers-jmap"]
-providers-llm = []
+providers-llm = ["neeml-common/providers-llm"]
 providers-maildir = ["neeml-common/providers-maildir"]
 providers-mbox = ["neeml-common/providers-mbox"]
 providers-nntp = ["neeml-common/providers-nntp"]
-providers-rss = []
+providers-rss = ["neeml-common/providers-rss"]
 providers-smtp = ["neeml-common/providers-smtp"]
 
 [dependencies]
