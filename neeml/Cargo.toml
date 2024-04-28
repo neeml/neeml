@@ -1,0 +1,48 @@
+[package]
+name = "neeml"
+version = "0.1.0"
+edition.workspace = true
+authors.workspace = true
+rust-version.workspace = true
+license.workspace = true
+readme.workspace = true
+repository.workspace = true
+homepage.workspace = true
+categories.workspace = true
+keywords.workspace = true
+
+[[bin]]
+name = "neeml"
+path = 'src/bin/neeml.rs'
+required-features = ["server"]
+
+[[bin]]
+name = "neemlc"
+path = "src/bin/neemlc.rs"
+required-features = ["client"]
+
+[features]
+default = ["client", "server"]
+client = []
+server = []
+
+full = ["client", "server", "providers-all"]
+
+providers-all = ["neeml-common/providers-all"]
+providers-carddav = ["neeml-common/providers-carddav"]
+providers-contexts-exchange = ["neeml-common/providers-contexts-exchange"]
+providers-contexts-gmail = ["neeml-common/providers-contexts-gmail"]
+providers-dav = ["neeml-common/providers-dav"]
+providers-imap = ["neeml-common/providers-imap"]
+providers-jmap = ["neeml-common/providers-jmap"]
+providers-llm = []
+providers-maildir = ["neeml-common/providers-maildir"]
+providers-mbox = ["neeml-common/providers-mbox"]
+providers-nntp = ["neeml-common/providers-nntp"]
+providers-rss = []
+providers-smtp = ["neeml-common/providers-smtp"]
+
+[dependencies]
+anyhow.workspace = true
+thiserror.workspace = true
+neeml-common = { path = "../neeml-common", version = "0.1.0" }

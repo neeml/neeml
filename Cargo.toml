@@ -1,13 +1,12 @@
 [workspace]
 members = [
-    "neeml_cli",
-    "neeml_core",
-    "neeml_gui",
-    "neeml_server",
-    "neeml_tui",
+    "neeml-common",
+    "neeml-gui",
+    "neeml",
+    "neeml-tui",
 ]
 resolver = "2"
-default-members = ["neeml_core", "neeml_cli", "neeml_server"]
+default-members = ["neeml-common", "neeml"]
 
 [workspace.package]
 authors = ["Dom Rodriguez <shymega@shymega.org.uk>"]
