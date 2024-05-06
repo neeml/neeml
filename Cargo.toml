@@ -23,7 +23,7 @@ version = "0.1.0"
 
 [workspace.dependencies]
 anyhow = { version = "1.0.82" }
-serde = { version = "1.0.199", features = ["derive"] }
+serde = { version = "1.0.200", features = ["derive"] }
 thiserror = { version = "1.0.59" }
 tokio = { version = "1.37.0", features = ["full"] }
 
