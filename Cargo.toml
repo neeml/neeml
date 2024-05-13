@@ -24,7 +24,7 @@ version = "0.1.0"
 [workspace.dependencies]
 anyhow = { version = "1.0.82" }
 serde = { version = "1.0.201", features = ["derive"] }
-thiserror = { version = "1.0.59" }
+thiserror = { version = "1.0.60" }
 tokio = { version = "1.37.0", features = ["full"] }
 
 [profile.dev]
