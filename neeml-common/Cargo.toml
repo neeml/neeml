@@ -54,4 +54,4 @@ jmap-client = { version = "0.3.2", optional = true }
 exchange-rs = { git = "https://github.com/neeml/exchange-rs", branch = "main", optional = true }
 nntprs = { git = "https://github.com/neeml/nntprs", branch = "main", optional = true }
 lettre = { version = "0.11.1", optional = true }
-melib = { version = "0.8.4", optional = true }
+melib = { version = "0.8.5", optional = true }
