@@ -1487,7 +1487,7 @@ dependencies = [
 [[package]]
 name = "nntprs"
 version = "0.1.0"
-source = "git+https://github.com/neeml/nntprs?branch=main#03aab8e87b5b0dd9d80ae1e4291d301a4f383cf4"
+source = "git+https://github.com/neeml/nntprs?branch=main#9204f5416bf6038f2794e314712665662bc133cf"
 dependencies = [
  "anyhow",
  "mail-parser",
