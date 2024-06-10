@@ -648,7 +648,7 @@ dependencies = [
 [[package]]
 name = "exchange-rs"
 version = "0.1.0"
-source = "git+https://github.com/neeml/exchange-rs?branch=main#9e9965c3c7d275fc717408c610920e48b168a199"
+source = "git+https://github.com/neeml/exchange-rs?branch=main#4e9d03d744d8106b759f6c4fa9c4af4746a8ea3a"
 dependencies = [
  "tokio",
 ]
