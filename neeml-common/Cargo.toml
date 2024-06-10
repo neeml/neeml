@@ -53,6 +53,6 @@ tokio.workspace = true
 
 exchange-rs = { git = "https://github.com/neeml/exchange-rs", branch = "main", optional = true, default-features = false }
 google-gmail1 = { version = "5.0.4", optional = true }
-melib = { version = "0.8.5", optional = true, default-features = false }
+melib = { version = "0.8.6", optional = true, default-features = false }
 nntprs = { git = "https://github.com/neeml/nntprs", branch = "main", optional = true, default-features = false }
 sendmail = { version = "2.0.0", optional = true }

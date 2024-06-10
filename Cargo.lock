@@ -998,7 +998,7 @@ dependencies = [
  "httpdate",
  "itoa",
  "pin-project-lite",
- "socket2 0.4.10",
+ "socket2 0.5.6",
  "tokio",
  "tower-service",
  "tracing",
@@ -1330,9 +1330,9 @@ checksum = "2532096657941c2fea9c289d370a250971c689d4f143798ff67113ec042024a5"
 
 [[package]]
 name = "melib"
-version = "0.8.5"
+version = "0.8.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c4c4d410929c0e1a2a8f9c6e8bf74e1c5cb0a2231a2a333966dbf2f78cd23b7e"
+checksum = "4f233699ab6a71d41529624e3d9600c8a3a208874fcf4ec4a05778314afdd2e7"
 dependencies = [
  "async-stream",
  "base64 0.13.1",
