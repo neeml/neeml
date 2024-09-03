@@ -16,39 +16,7 @@ categories.workspace = true
 keywords.workspace = true
 
 [features]
-default = ["providers-mail", "providers-storage"]
-
-providers-all = ["providers-mail", "providers-news", "providers-storage", "providers-contexts", "providers-completion"]
-
-providers-completion = ["providers-completion-llm", "providers-completion-contacts-carddav"]
-providers-completion-llm = ["providers-completion-llm-ollama", "providers-completion-llm-openai"]
-providers-completion-llm-ollama = []
-providers-completion-llm-openai = []
-providers-completion-contacts-carddav = []
-
-providers-contexts = ["providers-contexts-mail-exchange", "providers-contexts-mail-gmail", "providers-contexts-mail-notmuch"]
-providers-contexts-mail-exchange = ["exchange-rs"]
-providers-contexts-mail-gmail = ["google-gmail1"]
-providers-contexts-mail-notmuch = ["melib/notmuch"]
-
-providers-mail = ["providers-mail-imap", "providers-mail-maildir", "providers-mail-mbox", "providers-news-nntp", "providers-mail-sendmail", "providers-mail-smtp", "providers-mail-exchange", "providers-mail-jmap", "providers-mail-gmail"]
-providers-mail-exchange = ["exchange-rs"]
-providers-mail-gmail = ["google-gmail1", "providers-mail-imap"]
-providers-mail-imap = ["melib/imap"]
-providers-mail-jmap = ["melib/jmap"]
-providers-mail-maildir = ["melib/maildir"]
-providers-mail-mbox = ["melib/mbox"]
-providers-mail-sendmail = ["sendmail"]
-providers-mail-smtp = ["melib/smtp"]
-
-providers-news = ["providers-news-nntp", "providers-news-rss"]
-providers-news-nntp = ["nntprs", "melib/nntp"]
-providers-news-rss = []
-
-providers-storage = ["providers-storage-sqlite", "providers-storage-rsync", "providers-storage-gitsync"]
-providers-storage-rsync = []
-providers-storage-gitsync = []
-providers-storage-sqlite = []
+default = []
 
 [dependencies]
 anyhow.workspace = true
